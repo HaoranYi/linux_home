@@ -45,6 +45,9 @@ Plug 'tpope/vim-fugitive'
 "" Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 "
+
+" rust 
+Plug 'rust-lang/rust.vim'"
 " Initialize plugin system
 call plug#end()
 
@@ -157,5 +160,8 @@ color zenburn
 set rtp+=/opt/homebrew/bin/fzf
 nnoremap <C-p> :Files<Cr>
 " nnoremap <C-g> :Rg<Cr>
+
+" rust autoformat on save
+let g:rustfmt_autosave = 1"
 
 
