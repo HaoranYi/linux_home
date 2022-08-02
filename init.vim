@@ -4,6 +4,9 @@ set encoding=utf-8
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
+
 Plug 'rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
