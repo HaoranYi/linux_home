@@ -47,7 +47,8 @@ Plug 'tpope/vim-fugitive'
 "
 
 " rust 
-Plug 'rust-lang/rust.vim'"
+Plug 'rust-lang/rust.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -170,4 +171,5 @@ nnoremap <C-p> :Files<Cr>
 " rust autoformat on save
 let g:rustfmt_autosave = 1"
 
-
+autocmd GUIEnter * set vb t_vb= " for your GUI
+autocmd VimEnter * set vb t_vb=
