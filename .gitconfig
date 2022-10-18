@@ -6,3 +6,5 @@
 [user]
 	name = haoran
 	email = haoran@mbook
+[core]
+	excludesFile = ~/.gitignore
