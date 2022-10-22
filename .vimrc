@@ -168,8 +168,13 @@ set rtp+=/opt/homebrew/bin/fzf
 nnoremap <C-p> :Files<Cr>
 " nnoremap <C-g> :Rg<Cr>
 
+" turn off bell
+autocmd GUIEnter * set vb t_vb= " for your GUI
+autocmd VimEnter * set vb t_vb=
+
 " rust autoformat on save
 let g:rustfmt_autosave = 1"
 
-autocmd GUIEnter * set vb t_vb= " for your GUI
-autocmd VimEnter * set vb t_vb=
+" rust ctags
+autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
+" autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
