@@ -17,6 +17,9 @@ Plug 'junegunn/fzf.vim'
 " fugitive
 Plug 'tpope/vim-fugitive'
 
+" map ctr-p to fzf Files command
+nnoremap <silent> <C-p> :Files<CR>
+
 "" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 "Plug 'junegunn/vim-easy-align'
 "
