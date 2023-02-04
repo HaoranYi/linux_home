@@ -181,3 +181,8 @@ let g:rustfmt_autosave = 1"
 " rust ctags
 autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
 " autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
+"
+" cursors blinking
+let &t_EI = "\<Esc>[1 q"
+let &t_SR = "\<Esc>[3 q"
+let &t_SI = "\<Esc>[5 q"
